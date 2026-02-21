@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Group Member Exporter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📱 WhatsApp Exporter</h1>
+      <p class="subtitle">Ekspor anggota grup dengan mudah</p>
+    </div>
+
+    <div class="content">
+      <div id="statusArea" class="status-area">
+        <p id="statusText" class="status-text">Siap untuk mengekspor anggota grup</p>
+      </div>
+
+      <button id="exportBtn" class="btn btn-primary">
+        <span>🔽 Mulai Ekspor Anggota</span>
+      </button>
+
+      <div id="progressArea" class="progress-area hidden">
+        <div class="progress-bar-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <p id="progressText" class="progress-text">Memulai ekstraksi...</p>
+      </div>
+
+      <div id="resultArea" class="result-area hidden">
+        <div class="result-info">
+          <p id="resultText"></p>
+          <p id="fileNameText" class="file-name"></p>
+        </div>
+        <button id="retryBtn" class="btn btn-secondary">
+          🔄 Ekspor Lagi
+        </button>
+      </div>
+
+      <div id="errorArea" class="error-area hidden">
+        <p id="errorText" class="error-text"></p>
+        <button id="dismissBtn" class="btn btn-secondary">
+          ✕ Tutup
+        </button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="info-text">💡 Buka dialog anggota grup terlebih dahulu</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
